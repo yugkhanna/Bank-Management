@@ -1,24 +1,15 @@
-"""*****************************************************************************
-                            MODULES USED IN PROJECT
-*****************************************************************************"""
-
-import pickle #importing necessary libraries
+import pickle
 import os
-
-
-"""*****************************************************************************
-                            CLASS USED IN PROJECT
-*****************************************************************************"""
 
 class account(object):
     def __init__(s):
-        s.acno=0
+        s.accno=0
         s.name=""
         s.deposit=0
         s.type=""
 
-    def create_account(s):  #function to get data from user
-        name=raw_input("\n\nEnter the name of the account holder: ")
+    def create_account(s):
+        name = raw_input("Enter the name of the account holder: ")
         s.name=name.capitalize()
         type=raw_input("\nEnter type of the account (Current/Savings): ")
         s.type=type.upper()
